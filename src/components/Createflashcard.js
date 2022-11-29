@@ -77,7 +77,7 @@ const Createflashcard = () => {
                   />
 
                   <label className="block mb-0.5 mt-2 text-gray-500 text-sm">
-                    Add description
+                    Add Description
                   </label>
 
                   <Field
