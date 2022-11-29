@@ -70,7 +70,8 @@ const Mycards = () => {
                 <div className="flex items-center justify-between overflow-hidden ">
                   <button className="flex ml-4  text-yellow-700 font-semibold text-xs">
                     <span
-                      className="leading-none"
+                    id="view-card"
+                      className="View Cards leading-none"
                       onClick={() => cardView(card)}
                     >
                       View Cards

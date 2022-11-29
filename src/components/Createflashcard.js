@@ -106,7 +106,7 @@ const Createflashcard = () => {
                                 {index + 1}
                               </span>
                             </div>
-                            <div className="sm:mt-4 sm:mr-6">
+                            <div className="w-full sm:mt-4 sm:mr-4">
                               <label className="block mb-0.5 text-gray-500 text-sm">
                                 Enter Term *
                               </label>
@@ -114,7 +114,7 @@ const Createflashcard = () => {
                                 id="inputValid"
                                 name={`flashterms.${index}.term`}
                                 type="text"
-                                className="w-full p-2 h-8 border border-gray-400 rounded-md focus:outline-none"
+                                className="w-full p-2 h-8 border border-gray-400 rounded-sm focus:outline-none"
                               />
                               <ErrorMessage
                                 name={`flashterms.${index}.term`}
@@ -123,12 +123,12 @@ const Createflashcard = () => {
                               />
                             </div>
 
-                            <div className="mt-2 sm:mt-4 sm:ml-10 md:ml-10 lg:ml-10">
+                            <div className="mt-2 sm:mt-4 sm:ml-10 md:ml-10 lg:ml-10 w-full">
                               <label className="block mb-0.5 text-gray-500 text-sm">
                                 Enter Defination *
                               </label>
                               <Field
-                                className="p-2 h-8 w-full border border-gray-400 rounded-md focus:outline-none"
+                                className="p-2 h-8 w-full border border-gray-400 rounded-sm focus:outline-none"
                                 type="text"
                                 name={`flashterms[${index}].defination`}
                               />
@@ -155,6 +155,7 @@ const Createflashcard = () => {
                           </div>
                         ))}
                         <button
+                        
                           onClick={() => push({ term: "", defination: "" })}
                           type="button"
                           className="flex font-semibold pt-4 pb-2 ml-6 sm:ml-16 text-blue-600"
@@ -168,7 +169,7 @@ const Createflashcard = () => {
               </div>
               <div className="my-10 grid place-content-center">
                 <button
-                  disabled={isSubmitting}
+                  
                   type="submit"
                   className="px-14 py-1.5 rounded-sm bg-red-600 text-white text-sm active:bg-red-700"
                 >
