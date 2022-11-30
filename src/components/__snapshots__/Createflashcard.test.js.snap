@@ -24,8 +24,9 @@ exports[`should take a snapshot 1`] = `
                 Create Group *
               </label>
               <input
-                class="mb-1 p-2 h-8 w-full sm:w-60 border border-gray-400 rounded-sm focus:outline-none"
+                class="placeholder-gray-300 mb-1 p-2 h-8 w-full sm:w-60 border border-gray-400 rounded-sm focus:outline-none"
                 name="groupname"
+                placeholder="Enter Groupname"
                 type="text"
                 value=""
               />
@@ -69,12 +70,13 @@ exports[`should take a snapshot 1`] = `
           <label
             class="block mb-0.5 mt-2 text-gray-500 text-sm"
           >
-            Add description
+            Add Description
           </label>
           <textarea
-            class="w-2/3 p-2 text-sm border border-gray-400 rounded-sm placeholder-gray-600 placeholder-opacity-25 focus:outline-none "
+            class="w-2/3 p-2 text-sm border border-gray-400 rounded-sm placeholder-gray-300 focus:outline-none "
             name="description"
             placeholder="Describe the roles,responsibility,skills required for the job and help candidate understand the role better."
+            type="text"
           />
         </div>
         <div
@@ -93,7 +95,7 @@ exports[`should take a snapshot 1`] = `
               </span>
             </div>
             <div
-              class="sm:mt-4 sm:mr-6"
+              class="w-full sm:mt-4 sm:mr-4"
             >
               <label
                 class="block mb-0.5 text-gray-500 text-sm"
@@ -101,15 +103,15 @@ exports[`should take a snapshot 1`] = `
                 Enter Term *
               </label>
               <input
-                class="w-full p-2 h-8 border border-gray-400 rounded-md focus:outline-none"
-                id="inputValid"
+                class="placeholder-gray-300 w-full p-2 h-8 border border-gray-400 rounded-sm focus:outline-none"
                 name="flashterms.0.term"
+                placeholder="Enter Term"
                 type="text"
                 value=""
               />
             </div>
             <div
-              class="mt-2 sm:mt-4 sm:ml-10 md:ml-10 lg:ml-10"
+              class="mt-2 sm:mt-4 sm:ml-10 md:ml-10 lg:ml-10 w-full"
             >
               <label
                 class="block mb-0.5 text-gray-500 text-sm"
@@ -117,8 +119,9 @@ exports[`should take a snapshot 1`] = `
                 Enter Defination *
               </label>
               <input
-                class="p-2 h-8 w-full border border-gray-400 rounded-md focus:outline-none"
+                class="placeholder-gray-300 p-2 h-8 w-full border border-gray-400 rounded-sm focus:outline-none"
                 name="flashterms[0].defination"
+                placeholder="Enter Defination"
                 type="text"
                 value=""
               />

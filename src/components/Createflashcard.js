@@ -54,8 +54,9 @@ const Createflashcard = () => {
                         Create Group *
                       </label>
                       <Field
-                        className="mb-1 p-2 h-8 w-full sm:w-60 border border-gray-400 rounded-sm focus:outline-none"
+                        className="placeholder-gray-300 mb-1 p-2 h-8 w-full sm:w-60 border border-gray-400 rounded-sm focus:outline-none"
                         type="text"
+                        placeholder="Enter Groupname"
                         name="groupname"
                       />
                     </div>
@@ -82,7 +83,8 @@ const Createflashcard = () => {
 
                   <Field
                     as="textarea"
-                    className="w-2/3 p-2 text-sm border border-gray-400 rounded-sm placeholder-gray-600 placeholder-opacity-25 focus:outline-none "
+                    type="text"
+                    className="w-2/3 p-2 text-sm border border-gray-400 rounded-sm placeholder-gray-300 focus:outline-none "
                     name="description"
                     placeholder="Describe the roles,responsibility,skills required for the job and help candidate understand the role better."
                   />
@@ -111,10 +113,10 @@ const Createflashcard = () => {
                                 Enter Term *
                               </label>
                               <Field
-                                id="inputValid"
                                 name={`flashterms.${index}.term`}
                                 type="text"
-                                className="w-full p-2 h-8 border border-gray-400 rounded-sm focus:outline-none"
+                                placeholder="Enter Term"
+                                className="placeholder-gray-300 w-full p-2 h-8 border border-gray-400 rounded-sm focus:outline-none"
                               />
                               <ErrorMessage
                                 name={`flashterms.${index}.term`}
@@ -128,8 +130,9 @@ const Createflashcard = () => {
                                 Enter Defination *
                               </label>
                               <Field
-                                className="p-2 h-8 w-full border border-gray-400 rounded-sm focus:outline-none"
+                                className="placeholder-gray-300 p-2 h-8 w-full border border-gray-400 rounded-sm focus:outline-none"
                                 type="text"
+                                placeholder="Enter Defination"
                                 name={`flashterms[${index}].defination`}
                               />
                               <ErrorMessage
@@ -169,7 +172,6 @@ const Createflashcard = () => {
               </div>
               <div className="my-10 grid place-content-center">
                 <button
-                  
                   type="submit"
                   className="px-14 py-1.5 rounded-sm bg-red-600 text-white text-sm active:bg-red-700"
                 >

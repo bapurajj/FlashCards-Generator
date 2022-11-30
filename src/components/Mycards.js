@@ -52,7 +52,7 @@ const Mycards = () => {
                   </span>
 
                   <div className=" ml-3 truncate">
-                    <h1 className="w-14 lg:w-auto font-bold overflow-hidden text-ellipsis ">
+                    <h1 data-testid="cardname" className="w-14 lg:w-auto font-bold overflow-hidden text-ellipsis ">
                       {myFlashCards[index].groupname}
                     </h1>
 

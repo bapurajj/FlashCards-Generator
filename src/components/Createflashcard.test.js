@@ -18,3 +18,27 @@ it('should take a snapshot', () => {
   expect(asFragment(<Createflashcard />)).toMatchSnapshot();
 });
 //asFragment is a function which returns documentfragments 
+
+test('groupname input should be rendered', ()=>{
+  render(<Createflashcard />);
+  const userInput = screen.getByPlaceholderText(/enter groupname/i);
+  expect(userInput).toBeInTheDocument();
+});
+
+test('description input should be rendered', ()=>{
+  render(<Createflashcard />);
+  const userInput = screen.getByPlaceholderText(/Describe the roles,responsibility,skills required for the job and help candidate understand the role better./i);
+  expect(userInput).toBeInTheDocument();
+});
+
+test('term input should be rendered', ()=>{
+  render(<Createflashcard />);
+  const userInput = screen.getByPlaceholderText(/enter term/i);
+  expect(userInput).toBeInTheDocument();
+});
+
+test('term defination input should be rendered', ()=>{
+  render(<Createflashcard />);
+  const userInput = screen.getByPlaceholderText(/enter defination/i);
+  expect(userInput).toBeInTheDocument();
+});
